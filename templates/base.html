@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <a href="/en" title="Site in english">
+      {% if session['lang'] == 'en' %}
+      <strong> EN </strong>
+      {% else %}
+       EN
+      {% endif %}
+    </a>
+    |
+    <a href="/pt" title="Site em português">
+      {% if session['lang'] == 'pt' %}
+      <strong> PT </strong>
+      {% else %}
+       PT
+      {% endif %}
+    </a>
+    {% block content %}{% endblock %}
+  </div>
+</body>
+</html>

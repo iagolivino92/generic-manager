@@ -1,0 +1,20 @@
+{
+  "users": {
+    "<user>": "<password>"
+  },
+  "services": [
+    {
+      "name": {
+      "en": "Budget Calculator",
+      "pt": "Calculadora de Orçamento"
+      },
+      "endpoint": "budget"
+    }
+  ],
+  "settings": {
+    "discount_rate": 0.28,
+    "iva_rate": 0.23,
+    "transport_rate": 0.4,
+    "secret_key": "<your secret key>"
+  }
+}

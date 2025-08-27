@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="{{ url_for('logout') }}">{{ translations.get('logout') }}</a>
+<h2>{{ translations.get('greeting') }}{{ session['user'] }}</h2>
+<ul>
+  {% for service in services %}
+    <li><a href="{{ url_for(service.endpoint) }}">{{ service.get('name').get(session['lang']) }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}

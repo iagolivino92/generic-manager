@@ -1,0 +1,55 @@
+{
+  "en":{
+    "greeting": "Welcome, ",
+    "user": "User",
+    "budget": {
+      "title": "Budget Calculator",
+      "fields": {
+        "description": "Description",
+        "quantity": "Quantity",
+        "factory_price": "Factory Price (€/Unit)",
+        "price_with_discount": "Price With Discount (€/Unit)",
+        "silicone": "Silicone (€/Unit)",
+        "installation": "Installation (€/Unit)",
+        "total_installation": "Total Installation (€)",
+        "transportation_km": "Transportation (KM)",
+        "transportation_price": "Transportation (€/Unit)",
+        "total_cost": "Total Cost (€/Unit)",
+        "margin": "Margin (% - decimal)",
+        "price_without_iva": "Price without IVA (€/Unit)",
+        "iva": "IVA (23%)",
+        "total_with_iva": "Total with IVA (€)",
+        "calculate": "Calculate",
+        "result": "Result"
+      }
+    },
+    "logout": "Logout"
+  },
+  "pt": {
+    "greeting": "Bem-Vindo, ",
+    "user": "Usuário",
+    "budget": {
+      "title": "Calculadora de Orçamento",
+      "fields": {
+        "description": "Descrição",
+        "quantity": "Quantidade",
+        "factory_price": "Preço de Fábrica (€/Unidade)",
+        "price_with_discount": "Preço com desconto (€/Unidade)",
+        "silicone": "Silicone (€/Unidade)",
+        "installation": "Instalação (€/Unidade)",
+        "total_installation": "Total Instalação (€)",
+        "transportation_km": "Transporte (KM)",
+        "transportation_price": "Transporte (€/Unidade)",
+        "total_cost": "Custo Total (€/Unidade)",
+        "margin": "Margem (% - decimal)",
+        "price_without_iva": "Preço sem IVA (€/Unidade)",
+        "iva": "IVA (23%)",
+        "final_price_with_iva": "Preço Final com IVA (€/Unidade)",
+        "total_with_iva": "Total com IVA (€)",
+        "calculate": "Calcular",
+        "result": "Resultado"
+      }
+    },
+    "logout": "Sair"
+  }
+}
