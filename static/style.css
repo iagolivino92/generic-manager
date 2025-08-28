@@ -41,7 +41,7 @@ form {
   gap: 15px;
 }
 
-input, button {
+input, button, select {
   padding: 12px;
   border: 1px solid #d1d5db;
   border-radius: 8px;
@@ -93,14 +93,40 @@ td:first-child {
   color: #374151;
 }
 
-.container a[href="/logout"] {
+.container .top-right {
   position: absolute;
   top: 20px;   /* distance from top of box */
   right: 20px; /* distance from right of box */
 }
 
-.container h5.user {
+.container .bottom-right {
   position: absolute;
-  top: 20px;   /* distance from top of box */
+  bottom: 20px;   /* distance from top of box */
   right: 20px; /* distance from right of box */
+}
+
+.a-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none; /* remove underline */
+  text-align: center;
+}
+
+.c-blue {
+  background-color: #007bff; /* button color */
+  color: white;
+}
+
+.c-blue:hover {
+  background-color: #0056b3;
+}
+
+.c-red {
+  background-color: #d92a2a; /* button color */
+  color: white;
+}
+
+.c-red:hover {
+  background-color: #c91c1c;
 }

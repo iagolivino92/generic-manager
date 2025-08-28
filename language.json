@@ -1,7 +1,20 @@
 {
   "en":{
+    "portal_name": "BS Caixilharias - Portal",
     "greeting": "Welcome, ",
     "user": "User",
+    "password": "Password",
+    "login": "Login",
+    "logout": "Logout",
+    "add_user": "New User",
+    "user_role_read": "Read",
+    "user_role_admin": "Administrator",
+    "back_to_home": "Back to Home",
+    "create_or_update_user": "Create/Update User",
+    "save_user": "Save User",
+    "errors": {
+      "invalid_credentials": "Invalid Credentials"
+    },
     "budget": {
       "title": "Budget Calculator",
       "fields": {
@@ -22,12 +35,24 @@
         "calculate": "Calculate",
         "result": "Result"
       }
-    },
-    "logout": "Logout"
+    }
   },
   "pt": {
+    "portal_name": "BS Caixilharias - Portal",
     "greeting": "Bem-Vindo, ",
     "user": "Usuário",
+    "password": "Senha/Palavra-Passe",
+    "login": "Entrar",
+    "logout": "Sair",
+    "add_user": "Novo Usuário",
+    "user_role_read": "Leitura",
+    "user_role_admin": "Administrador",
+    "back_to_home": "Página Inicial",
+    "create_or_update_user": "Criar/Atualizar Usuário",
+    "save_user": "Salvar Usuário",
+    "errors": {
+      "invalid_credentials": "Credenciais Inválidas"
+    },
     "budget": {
       "title": "Calculadora de Orçamento",
       "fields": {
@@ -49,7 +74,6 @@
         "calculate": "Calcular",
         "result": "Resultado"
       }
-    },
-    "logout": "Sair"
+    }
   }
 }

@@ -1,10 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-<a href="{{ url_for('logout') }}">{{ translations.get('logout') }}</a>
+<div class="top-right">
+  <a href="{{ url_for('logout') }}">{{ translations.get('logout') }}</a>
+</div>
 <h2>{{ translations.get('greeting') }}{{ session['user'] }}</h2>
 <ul>
   {% for service in services %}
     <li><a href="{{ url_for(service.endpoint) }}">{{ service.get('name').get(session['lang']) }}</a></li>
   {% endfor %}
 </ul>
+{% if session['role'] == 'admin' %}
+<br>
+<a href="/user" class="a-btn c-blue bottom-right">{{ translations.get('add_user') }}</a>
+{% endif %}
 {% endblock %}
