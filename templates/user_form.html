@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="top-right">
+  <a href="{{ url_for('home') }}">{{ translations.get('back_to_home') }}</a>
+</div>
+<h2>{{ translations.get('create_or_update_user') }}</h2>
+
+<form method="post">
+  <input type="text" name="nickname" placeholder="{{ translations.get('user') }}" required>
+  <input type="password" name="password" placeholder="{{ translations.get('password') }}" required>
+  <select name="role">
+    <option value="read">{{ translations.get('user_role_read') }}</option>
+    <option value="admin">{{ translations.get('user_role_admin') }}</option>
+  </select>
+  <button type="submit">{{ translations.get('save_user') }}</button>
+</form>
+<br>
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul>
+    {% for category, message in messages %}
+      <li style="color:{% if category == 'error' %}red{% else %}green{% endif %};">
+        {{ message }}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% endblock %}
