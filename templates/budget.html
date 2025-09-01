@@ -23,7 +23,8 @@
     {% endfor %}
   </table>
 {% endif %}
+<br>
 <div class="bottom-right">
-  <h5 class="user">{{ translations.get('user') }}: {{ session['user'] }}</h5>
+  <span class="user"><strong>{{ translations.get('user') }}: {{ session['user'] }}</strong></span>
 </div>
 {% endblock %}

@@ -1,8 +1,8 @@
 def calculate_budget(data, settings, translations):
     qty = float(data.get("quantity", 0))
     factory_price = float(data.get("factory_price", 0))
-    silicone = float(data.get("silicone", 0))
-    installation = float(data.get("installation", 0))
+    silicone = (float(data.get("silicone", 0))*qty)*2
+    installation = float(data.get("installation", 0))  # TODO: calcular auto - se qty 1-5: 100, 6-9: 90, 10>>80€
     transport_km = float(data.get("transport_km", 0))
     margin = float(data.get("margin", 0))
 
@@ -11,11 +11,12 @@ def calculate_budget(data, settings, translations):
     transport_rate = settings["transport_rate"]
 
     price_with_discount = factory_price * (1 - discount_rate)
+    margin_value = price_with_discount * margin
     total_installation = installation * qty
     transport_per_unit = transport_km * transport_rate
 
     total_cost = price_with_discount + silicone + installation + transport_per_unit
-    price_without_iva = total_cost * (1 + margin)
+    price_without_iva = total_cost + margin_value
     iva = price_without_iva * iva_rate
     final_price_with_iva = price_without_iva + iva
     total_with_iva = final_price_with_iva * qty
